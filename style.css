@@ -46,3 +46,9 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.profile-image {
+    width: 150px; /* Adjust the width as needed */
+    border-radius: 50%; /* Optional: creates a circular shape for the image */
+    margin-bottom: 20px; /* Optional: adds some space below the image */
+  }
