@@ -23,6 +23,11 @@ body {
     left: 50%; /* Move it 50% from the left */
     transform: translate(-50%, -50%); /* Center the name */
   }
+
+  header h2 {
+    font-size: 56px;
+    text-align: center;
+  }
   
   nav {
     position: absolute; /* Position the navigation absolutely within the header */
@@ -42,9 +47,9 @@ body {
   
   nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 32px;
   }
   
   /* Full-screen background image with text overlay */
@@ -53,6 +58,15 @@ body {
     height: 100vh;
     object-fit: cover;
     filter: grayscale(100%);
+  }
+
+  .welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
   }
   
   /* Styling for the about me section */
@@ -67,7 +81,6 @@ body {
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
   }
