@@ -60,16 +60,6 @@ body {
     filter: grayscale(100%);
   }
 
-  .welcome-text {
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    color: #fff;
-    z-index: 2;
-  }
   
   /* Styling for the about me section */
   .tab-content {
