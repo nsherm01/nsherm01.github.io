@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header with Background Image</title>
+    <title>Navigation Header</title>
     <style>
         body {
             margin: 0;
@@ -14,30 +14,57 @@
             background-position: center top;
             font-family: Arial, sans-serif;
             color: white;
-
         }
 
         header {
             text-align: center;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        h1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100px; /* Adjust the height as needed */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
             margin: 0;
-            font-size: 2em;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Your Header Name</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="interests.html">Interests</a></li>
+            </ul>
+        </nav>
     </header>
 </body>
 
