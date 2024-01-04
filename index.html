@@ -17,6 +17,7 @@
         }
 
         header {
+            position: relative; /* Make the header a positioning context for the absolutely positioned nav */
             text-align: center;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.5);
@@ -27,22 +28,27 @@
             height: 100px; /* Adjust the height as needed */
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
+        nav {
+            position: absolute; /* Position the navigation absolutely within the header */
+            top: 1em; /* Adjust as needed for vertical positioning */
+            right: 1em; /* Adjust as needed for horizontal positioning */
         }
 
-        nav li {
-            margin: 0 15px;
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
 
         nav a {
             text-decoration: none;
-            color: white;
+            color: white; /* Change the color to match the existing style */
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.2em; /* Adjust the font size as needed */
             padding: 10px 15px;
             border: 2px solid white;
             border-radius: 5px;
