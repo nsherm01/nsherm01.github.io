@@ -19,8 +19,8 @@ body {
     color: #000;
     font-size: 32px;
     position: absolute; /* Position the name absolutely within the header */
-    top: 50%; /* Move it 50% down from the top */
-    left: 50%; /* Move it 50% from the left */
+    top: 20%; /* Move it 50% down from the top */
+    left: 70%; /* Move it 50% from the left */
     transform: translate(-50%, -50%); /* Center the name */
   }
 
