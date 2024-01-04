@@ -60,6 +60,12 @@ body {
     filter: grayscale(100%);
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+  }
+
   
   /* Styling for the about me section */
   .tab-content {
