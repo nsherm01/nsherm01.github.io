@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Copperplate', fantasy;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -7,18 +7,27 @@ body {
   
   header {
     background-color: transparent;
-    color: #d40707;
+    color: #ffffff;
     padding: 1em;
     text-align: center;
-    position: fixed;
-    width: 100%;
+    position: relative; /* Make the header position relative */
     z-index: 1;
   }
   
   header h1 {
     margin: 0;
-    color: #5ff30a;
+    color: #ffffff;
     font-size: 32px;
+    position: absolute; /* Position the name absolutely within the header */
+    top: 50%; /* Move it 50% down from the top */
+    left: 50%; /* Move it 50% from the left */
+    transform: translate(-50%, -50%); /* Center the name */
+  }
+  
+  nav {
+    position: absolute; /* Position the navigation absolutely within the header */
+    top: 1em; /* Adjust as needed for vertical positioning */
+    right: 1em; /* Adjust as needed for horizontal positioning */
   }
   
   nav ul {
