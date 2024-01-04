@@ -18,8 +18,9 @@
             padding: 0;
             background-image: url('profile.jpg');
             background-size: cover;
-            background-position: center;
-            font-family: 'Roboto Thin', Arial, sans-serif;
+            background-position: center top;
+            background-position-y: 40%; /* Remove 20% from the top */
+            font-family: Arial, sans-serif;
             color: white;
         }
 
@@ -27,8 +28,8 @@
             position: relative;
             text-align: center;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -36,20 +37,15 @@
         }
 
         h1 {
+            font-family: 'Roboto-Thin';
+            background-color: rgba(0, 0, 0, 0);
             margin: 0;
-            font-size: 3em;
+            font-size: 2em;
             position: absolute;
             top: 10%; /* Adjust as needed */
             right: 10%; /* Adjust as needed */
         }
 
-        h2 {
-            margin: 0;
-            font-size: 1em;
-            position: absolute;
-            top: 0%; /* Adjust as needed */
-            right: 10%; /* Adjust as needed */
-        }
 
         nav {
             position: absolute;
@@ -88,7 +84,6 @@
 <body>
     <header>
         <h1>Nate Sherman</h1>
-        <h2>Programmer - Volunteer - Creator</h2>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
