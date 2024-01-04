@@ -2,12 +2,12 @@ body {
     font-family: 'Copperplate', fantasy;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: transparent;
   }
   
   header {
     background-color: transparent;
-    color: #ffffff;
+    color: #000000;
     padding: 1em;
     text-align: center;
     position: relative; /* Make the header position relative */
@@ -16,7 +16,7 @@ body {
   
   header h1 {
     margin: 0;
-    color: #ffffff;
+    color: #000;
     font-size: 32px;
     position: absolute; /* Position the name absolutely within the header */
     top: 50%; /* Move it 50% down from the top */
