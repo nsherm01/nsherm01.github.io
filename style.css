@@ -6,6 +6,9 @@ body {
   }
   
   header {
+    background-image: url('profile.jpg'); /* Replace 'Images/Damask.png' with the actual path to your image */
+    background-size: cover; /* Ensures the background image covers the entire header */
+    background-position: center; /* Centers the background image within the header */
     background-color: transparent;
     color: #000000;
     padding: 0;
