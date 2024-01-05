@@ -16,12 +16,12 @@
         body {
             margin: 0;
             padding: 0;
+            background-image: url('profile.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-position-y: 70%; /* Remove 20% from the top */
             font-family: 'Roboto-Thin';
             color: white;
-        }
-
-        .container {
-            overflow: hidden; /* Hide overflow to crop pseudo-element */
         }
 
         header {
@@ -36,24 +36,26 @@
             height: 100vh;
         }
 
-        h1,
-        h2 {
+        h1 {
+            font-family: 'Roboto-Thin';
+            background-color: rgba(0, 0, 0, 0);
             margin: 0;
             font-size: 4.5em;
             position: absolute;
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        h1 {
             top: 40%; /* Adjust as needed */
             right: 9%; /* Adjust as needed */
         }
 
         h2 {
+            font-family: 'Roboto-Thin';
+            background-color: rgba(0, 0, 0, 0);
+            margin: 0;
             font-size: 1em;
+            position: absolute;
             top: 50%; /* Adjust as needed */
             right: 20%; /* Adjust as needed */
         }
+
 
         nav {
             position: absolute;
@@ -87,21 +89,6 @@
             color: black;
         }
 
-        /* Pseudo-element for background image cropping */
-        header::before {
-            content: '';
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('profile.jpg');
-            background-size: cover;
-            background-position: center top;
-            background-position-y: 40%; /* Adjust as needed */
-        }
-
         /* About Me Section Styles */
         .about-me-section {
             text-align: center;
@@ -124,19 +111,17 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>Nate Sherman</h1>
-            <h2>Programmer - Volunteer - Creator</h2>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="interests.html">Interests</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <header>
+        <h1>Nate Sherman</h1>
+        <h2>Programmer - Volunteer - Creator</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section id="about-me" class="about-me-section">
         <h3 class="about-me-header">About Me</h3>
@@ -147,6 +132,7 @@
             Committed to giving back to the community and eager to make a lasting impact in the field.
         </p>
     </section>
+
 </body>
 
 </html>
