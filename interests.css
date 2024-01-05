@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('sunsetnew.jpg');
+    background-image: url('Photos/sunsetnew.jpg');
     background-size: cover;
     background-position: center top;
     background-position-y: 70%; /* Remove 20% from the top */
@@ -50,7 +50,6 @@ h2 {
     right: 20%; /* Adjust as needed */
 }
 
-
 nav {
     position: absolute;
     top: 1em;
@@ -83,21 +82,24 @@ nav a:hover {
     color: black;
 }
 
-/* About Me Section Styles */
-.about-me-section {
+/* Interest Section Styles */
+.interest-section {
     text-align: center;
     padding: 40px;
     background-color: #fff; /* Background color for the about me section */
 }
 
-.about-me-header {
+.interest-header {
     font-size: 2em;
     margin-bottom: 20px;
     color: black;
+    left: 20%; /* Adjust as needed */
 }
 
-.about-me-paragraph {
+.interest-paragraph {
     font-size: 1.2em;
     line-height: 1.6;
     color: black;
+    left: 20%;
+    right: 55%;
 }

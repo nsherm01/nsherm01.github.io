@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('mountains.jpg');
+    background-image: url('Photos/mountains.jpg');
     background-size: cover;
     background-position: center top;
     background-position-y: 70%; /* Remove 20% from the top */
@@ -83,20 +83,20 @@ nav a:hover {
     color: black;
 }
 
-/* About Me Section Styles */
-.about-me-section {
+/* Project Section Styles */
+.project-section {
     text-align: center;
     padding: 40px;
     background-color: #fff; /* Background color for the about me section */
 }
 
-.about-me-header {
+.project-header {
     font-size: 2em;
     margin-bottom: 20px;
     color: black;
 }
 
-.about-me-paragraph {
+.project-paragraph {
     font-size: 1.2em;
     line-height: 1.6;
     color: black;
