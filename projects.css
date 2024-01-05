@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-position: center top;
     background-position-y: 70%; /* Remove 20% from the top */
+    background-repeat: no-repeat;
     font-family: 'Roboto-Thin';
     color: white;
     background-color: white;
