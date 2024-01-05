@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('Photos/sunset.jpg');
+    background-image: url('Photos/profile.jpg');
     background-size: cover;
     background-position: center top;
     background-position-y: 70%; /* Remove 20% from the top */
@@ -36,6 +36,16 @@ h1 {
     position: absolute;
     top: 40%; /* Adjust as needed */
     right: 9%; /* Adjust as needed */
+}
+
+h2 {
+    font-family: 'Roboto-Thin';
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    font-size: 1em;
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    right: 20%; /* Adjust as needed */
 }
 
 
