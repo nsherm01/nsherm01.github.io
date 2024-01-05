@@ -84,7 +84,7 @@ nav a:hover {
 
 /* Interest Section Styles */
 .interest-section {
-    text-align: center;
+    text-align: left;
     padding: 40px;
     background-color: #fff; /* Background color for the about me section */
 }
@@ -93,13 +93,10 @@ nav a:hover {
     font-size: 2em;
     margin-bottom: 20px;
     color: black;
-    left: 20%; /* Adjust as needed */
 }
 
 .interest-paragraph {
     font-size: 1.2em;
     line-height: 1.6;
     color: black;
-    left: 20%;
-    right: 55%;
 }
