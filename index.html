@@ -18,31 +18,8 @@
             padding: 0;
             font-family: 'Roboto-Thin';
             color: white;
-            overflow: hidden; /* Hide the overflow to crop the pseudo-element */
+            overflow: hidden; /* Hide overflow to crop pseudo-element */
         }
-
-        #graphic {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            background-image: url('profile.jpg');
-            background-size: cover;
-            background-position: center top;
-        }
-
-        #graphic::before {
-            position: absolute;
-            content: '';
-            z-index: -1;
-            width: 100%;
-            height: 40%; /* Adjust as needed to crop from the top */
-            background-image: url('profile.jpg');
-            background-size: cover;
-            background-position: center top;
-            top: 0;
-            left: 0;
-        }
-
 
         header {
             position: relative;
@@ -56,26 +33,24 @@
             height: 100vh;
         }
 
-        h1 {
-            font-family: 'Roboto-Thin';
-            background-color: rgba(0, 0, 0, 0);
+        h1,
+        h2 {
             margin: 0;
             font-size: 4.5em;
             position: absolute;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        h1 {
             top: 40%; /* Adjust as needed */
             right: 9%; /* Adjust as needed */
         }
 
         h2 {
-            font-family: 'Roboto-Thin';
-            background-color: rgba(0, 0, 0, 0);
-            margin: 0;
             font-size: 1em;
-            position: absolute;
             top: 50%; /* Adjust as needed */
             right: 20%; /* Adjust as needed */
         }
-
 
         nav {
             position: absolute;
@@ -107,6 +82,21 @@
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
             color: black;
+        }
+
+        /* Pseudo-element for background image cropping */
+        header::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('profile.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-position-y: 40%; /* Adjust as needed */
         }
 
         /* About Me Section Styles */
@@ -152,7 +142,6 @@
             Committed to giving back to the community and eager to make a lasting impact in the field.
         </p>
     </section>
-
 </body>
 
 </html>
