@@ -121,4 +121,5 @@ nav a:hover {
     max-width: 100%; /* Ensure the image does not exceed its container */
     height: auto; /* Maintain the aspect ratio */
     max-height: 300px; /* Set a maximum height for uniform size */
+    border-radius: 5px;
 }
