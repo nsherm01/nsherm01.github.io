@@ -72,11 +72,32 @@ nav a:hover {
     color: black;
 }
 
-/* Project Section Styles */
+/* Add this CSS to your existing stylesheet */
+
+.project-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between image and text as needed */
+}
+
+.project-image img {
+    width: 100%; /* Make the image fill its container */
+}
+
+.project-text {
+    flex: 2;
+}
+
+/* Adjustments for Project Section Styles */
 .project-section {
     text-align: center;
     padding: 40px;
-    background-color: #fff; /* Background color for the about me section */
+    background-color: #fff;
+    overflow: hidden; /* Clear float for the container */
 }
 
 .project-header {
