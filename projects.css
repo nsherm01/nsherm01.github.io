@@ -9,9 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('Photos/mountains.jpg');
-    background-size: cover;
-    background-position: center top;
-    background-position-y: 70%; /* Remove 20% from the top */
+    background-size: 100% auto;
     background-repeat: no-repeat;
     font-family: 'Roboto-Thin';
     color: white;
