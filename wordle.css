@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('Photos/terracehill.jpg');
+    background-image: url('Photos/profilenew.jpg');
     background-size: cover;
     background-position: center top;
     background-position-y: 70%; /* Remove 20% from the top */
@@ -46,9 +46,10 @@ h2 {
     margin: 0;
     font-size: 1em;
     position: absolute;
-    top: 50%; /* Adjust as needed */
+    top: 53%; /* Adjust as needed */
     right: 20%; /* Adjust as needed */
 }
+
 
 nav {
     position: absolute;
@@ -82,43 +83,21 @@ nav a:hover {
     color: black;
 }
 
-/* Interest Section Styles */
-.interest-section {
+/* About Me Section Styles */
+.wordle-section {
+    text-align: center;
     padding: 40px;
-    background-color: #fff; /* Background color for the interest section */
+    background-color: #fff; /* Background color for the about me section */
 }
 
-.interest-item {
-    display: flex;
-    align-items: center; /* Align items vertically within the container */
-    margin-bottom: 40px; /* Adjust as needed for spacing between items */
-}
-
-.text-container {
-    flex: 1; /* Take up remaining space within the container */
-    text-align: left; /* Align the text to the left */
-}
-
-.interest-header {
+.wordle-header {
     font-size: 2em;
     margin-bottom: 20px;
     color: black;
 }
 
-.interest-paragraph {
+.wordle-paragraph {
     font-size: 1.2em;
     line-height: 1.6;
     color: black;
-}
-
-.image-container {
-    flex-shrink: 0; /* Do not allow the image to shrink */
-    margin-left: 20px; /* Adjust as needed for spacing between text and image */
-    text-align: right; /* Align the image to the right */
-}
-
-.image-container img {
-    max-width: 100%; /* Ensure the image does not exceed its container */
-    height: auto; /* Maintain the aspect ratio */
-    max-height: 300px; /* Set a maximum height for uniform size */
 }
