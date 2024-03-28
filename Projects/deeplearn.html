@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate Sherman - Deep Learn Colorizer</title>
+    <link rel="stylesheet" type="text/css" href="deeplearn.css">
+</head>
+
+<body>
+    <header>
+        <h1>Deep Learning Greycale Image Colorizer</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="wordle" class="wordle-section">
+        <h3 class="wordle-header">About the Project:</h3>
+        <p class="wordle-paragraph">
+            For this project, I teamed up with co-creators Jack Walton and Daksh Gopalani. The project was inspired by the idea of colorizing old black and white photos. We wanted to create a tool that could automatically colorize these images, saving time and effort for users. The project was also a great opportunity to learn more about deep learning and image processing. We wanted to create a deep learning algorithm to “hallucinate” what an input grayscale image would look like when colorized. When this was completed, we expanded the scope to colorize grayscale video.
+        </p>
+        <p class="wordle-paragraph">
+        We used two pretrained models and one custom model. The ECCV model is a convolutional neural network. The SIGGRAPH model uses a combination of convolutional neural networks and recurrent neural networks. Our custom model is based on the ECCV convolutional layer network. 
+        </p>
+        <p class="wordle-paragraph">
+            We were successful in colorizing grayscale images using the ECCV and SIGGRAPH models. We were less successful using our custom model based off of ECCV, mainly due to limited processing power. 
+        </p>
+        <h3 class="wordle-header">Model Arcitecture:</h3>
+        <p class="wordle-paragraph">
+        All our deep learning models are written with Python using the PyTorch deep learning extension. 
+        </p>
+        <p class="wordle-paragraph">
+            ECCV: Deep learning architecture trained on large datasets of grayscale/color image pairs. CNN’s extract meaningful features from grayscale images.
+            </p>
+        <p class="wordle-paragraph">
+            SIGGRAPH: Integrates aspects such as global context modeling, local feature extraction, and simultaneous classification tasks. Has more complex algorithms to join global and local image priors, using techniques like recurrent neural networks (RNNs) or attention mechanisms.
+            </p>
+        <p class="wordle-paragraph">
+            We trained our model with ~620 greyscale/color pair images and 10 epochs instead of ~1000000 greyscale/color pair images and 100+ epochs and our model still took 10+ hours to execute.
+            </p>
+        <p class="wordle-paragraph">
+            For future extensions of the project, more processing power would help with training time, model size, and complexity. Furthermore, alternative datasets may have more success in colorizing images.
+            </p>
+    </section>
+
+</body>
+
+</html>
